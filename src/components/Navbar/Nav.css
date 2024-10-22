@@ -1,0 +1,39 @@
+.navbare {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    z-index: 99;
+    font-family: "Italianno", cursive;
+}
+
+.ul-nav {
+    display: inline-flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.ul-nav li {
+    font-size: 30px;
+    transition: all 0.5s ease;
+    margin: 10px;
+}
+
+.ul-nav li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.ul-nav li:hover::after {
+    width: 100%;
+}
